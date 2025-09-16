@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Issue - Civic Issue Reporting System</title>
+    <link rel="stylesheet" href="report-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-1 8-8 8s-8-2-8-8 1-8 8-8 8 2 8 8z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Civic Report</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="report-issue.html" class="nav-link active">Report Issue</a>
+                <a href="view-issues.html" class="nav-link">View Issues</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="admin-login.html" class="btn btn-primary btn-sm">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Report an Issue</h1>
+                <p class="page-subtitle">Help us make your city cleaner and better by reporting civic problems</p>
+            </div>
+
+            <!-- Report Form -->
+            <div class="form-container">
+                <form id="reportForm" class="report-form" enctype="multipart/form-data">
+                    <!-- Issue Details Section -->
+                    <div class="form-section">
+                        <h2 class="section-title">Issue Details</h2>
+                        
+                        <!-- Issue Title -->
+                        <div class="form-group">
+                            <label for="issueTitle" class="form-label">Issue Title *</label>
+                            <input 
+                                type="text" 
+                                id="issueTitle" 
+                                name="issueTitle" 
+                                class="form-input" 
+                                placeholder="Enter a short title (e.g., Garbage not collected)"
+                                maxlength="50"
+                                required
+                            >
+                            <div class="form-error" id="issueTitleError"></div>
+                        </div>
+
+                        <!-- Issue Description -->
+                        <div class="form-group">
+                            <label for="issueDescription" class="form-label">Description *</label>
+                            <textarea 
+                                id="issueDescription" 
+                                name="issueDescription" 
+                                class="form-textarea" 
+                                placeholder="Describe the issue in detail..."
+                                rows="4"
+                                minlength="10"
+                                required
+                            ></textarea>
+                            <div class="form-error" id="issueDescriptionError"></div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="form-group">
+                            <label for="issueLocation" class="form-label">Location *</label>
+                            <div class="location-input-group">
+                                <input 
+                                    type="text" 
+                                    id="issueLocation" 
+                                    name="issueLocation" 
+                                    class="form-input" 
+                                    placeholder="Enter location/address"
+                                    required
+                                >
+                                <button type="button" id="getLocationBtn" class="location-btn" title="Get current location">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="form-error" id="issueLocationError"></div>
+                        </div>
+
+                        <!-- Photo Upload -->
+                        <div class="form-group">
+                            <label for="issuePhoto" class="form-label">Upload Photo</label>
+                            <div class="file-upload-container">
+                                <input 
+                                    type="file" 
+                                    id="issuePhoto" 
+                                    name="issuePhoto" 
+                                    class="file-input" 
+                                    accept=".jpg,.jpeg,.png"
+                                >
+                                <label for="issuePhoto" class="file-upload-label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                        <circle cx="12" cy="13" r="4"/>
+                                    </svg>
+                                    <span class="file-upload-text">Choose Photo (JPG, PNG - Max 2MB)</span>
+                                </label>
+                            </div>
+                            <div class="file-preview" id="filePreview"></div>
+                            <div class="form-error" id="issuePhotoError"></div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details Section -->
+                    <div class="form-section">
+                        <h2 class="section-title">Contact Details</h2>
+                        <p class="section-description">At least one contact method is required for updates</p>
+                        
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="reporterName" class="form-label">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="reporterName" 
+                                name="reporterName" 
+                                class="form-input" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                            <div class="form-error" id="reporterNameError"></div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="reporterEmail" class="form-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="reporterEmail" 
+                                name="reporterEmail" 
+                                class="form-input" 
+                                placeholder="Enter your email address"
+                            >
+                            <div class="form-error" id="reporterEmailError"></div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="reporterPhone" class="form-label">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="reporterPhone" 
+                                name="reporterPhone" 
+                                class="form-input" 
+                                placeholder="Enter your phone number"
+                                pattern="[0-9]{10}"
+                            >
+                            <div class="form-error" id="reporterPhoneError"></div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" id="submitBtn" class="submit-btn">
+                            <span class="btn-text">Submit Report</span>
+                            <div class="btn-spinner hidden">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12a9 9 0 11-6.219-8.56"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <p class="form-note">By submitting this form, you agree to our terms of service and privacy policy.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22,4 12,14.01 9,11.01"/>
+                </svg>
+            </div>
+            <h3 class="modal-title">Report Submitted Successfully!</h3>
+            <p class="modal-message">Your issue has been reported and will be reviewed by our team. You'll receive updates via your provided contact method.</p>
+            <div class="modal-actions">
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">Return to Home</button>
+                <button class="btn btn-outline" onclick="resetForm()">Report Another Issue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="report-script.js"></script>
+</body>
+</html>

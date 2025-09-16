@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Civic Green Resolve</title>
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Civic Green Resolve</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="report-issue.html" class="nav-link">Report Issue</a>
+                <a href="view-issues.html" class="nav-link">View Issues</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="admin-login.html" class="nav-link">Admin Login</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>About Civic Green Resolve</h1>
+                    <p class="hero-subtitle">Empowering communities through transparent civic engagement and digital innovation</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Issues Resolved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Active Citizens</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none">
+                            <rect width="400" height="300" rx="16" fill="url(#gradient)"/>
+                            <circle cx="200" cy="150" r="60" fill="white" fill-opacity="0.2"/>
+                            <path d="M170 150L185 165L230 120" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To bridge the gap between citizens and local government by providing a transparent, efficient, and user-friendly platform for reporting and tracking civic issues. We believe that every voice matters and every issue deserves attention.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To create a world where every community member can easily report issues, track progress, and contribute to making their neighborhood a better place to live. We envision cities that are more responsive, accountable, and citizen-centric.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Transparency, accountability, efficiency, and community engagement are at the heart of everything we do. We believe in empowering citizens with the tools they need to create positive change in their communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Our Story</h2>
+                        <p class="story-intro">Civic Green Resolve was born from a simple observation: too many civic issues go unreported or unresolved due to bureaucratic barriers and lack of transparency.</p>
+                        
+                        <div class="story-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2020</div>
+                                <div class="timeline-content">
+                                    <h4>The Beginning</h4>
+                                    <p>Founded by a team of civic-minded technologists who witnessed firsthand the challenges citizens face when trying to report issues in their communities.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2021</div>
+                                <div class="timeline-content">
+                                    <h4>First Implementation</h4>
+                                    <p>Launched our first pilot program in partnership with three local municipalities, successfully resolving over 500 civic issues in the first year.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Expansion</h4>
+                                    <p>Expanded to serve 15 municipalities and introduced advanced features like real-time tracking, mobile optimization, and automated notifications.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2023</div>
+                                <div class="timeline-content">
+                                    <h4>Innovation</h4>
+                                    <p>Integrated AI-powered issue categorization and introduced predictive analytics to help municipalities better allocate resources and prevent issues.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Recognition</h4>
+                                    <p>Received the National Civic Innovation Award and expanded our platform to serve over 100 municipalities across the country.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2025</div>
+                                <div class="timeline-content">
+                                    <h4>Future Vision</h4>
+                                    <p>Continuing to innovate with new features like community forums, citizen feedback integration, and advanced analytics for better urban planning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Team</h2>
+                    <p>The passionate individuals behind Civic Green Resolve</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">
+                                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                    <circle cx="60" cy="60" r="60" fill="url(#memberGradient)"/>
+                                    <path d="M60 30c-16.569 0-30 13.431-30 30 0 8.284 3.358 15.785 8.787 21.213C44.215 86.642 51.716 90 60 90s15.785-3.358 21.213-8.787C86.642 75.785 90 68.284 90 60c0-16.569-13.431-30-30-30z" fill="white" fill-opacity="0.2"/>
+                                    <circle cx="60" cy="50" r="12" fill="white" fill-opacity="0.3"/>
+                                    <path d="M45 75c0-8.284 6.716-15 15-15s15 6.716 15 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <defs>
+                                        <linearGradient id="memberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="member-role">CEO & Co-Founder</p>
+                            <p class="member-bio">Former municipal planner with 15 years of experience in urban development and civic engagement. Passionate about using technology to improve community life.</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">
+                                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                    <circle cx="60" cy="60" r="60" fill="url(#memberGradient2)"/>
+                                    <path d="M60 30c-16.569 0-30 13.431-30 30 0 8.284 3.358 15.785 8.787 21.213C44.215 86.642 51.716 90 60 90s15.785-3.358 21.213-8.787C86.642 75.785 90 68.284 90 60c0-16.569-13.431-30-30-30z" fill="white" fill-opacity="0.2"/>
+                                    <circle cx="60" cy="50" r="12" fill="white" fill-opacity="0.3"/>
+                                    <path d="M45 75c0-8.284 6.716-15 15-15s15 6.716 15 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <defs>
+                                        <linearGradient id="memberGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Michael Chen</h3>
+                            <p class="member-role">CTO & Co-Founder</p>
+                            <p class="member-bio">Tech entrepreneur and software architect with expertise in civic technology and user experience design. Led the development of our platform from concept to deployment.</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">
+                                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                    <circle cx="60" cy="60" r="60" fill="url(#memberGradient3)"/>
+                                    <path d="M60 30c-16.569 0-30 13.431-30 30 0 8.284 3.358 15.785 8.787 21.213C44.215 86.642 51.716 90 60 90s15.785-3.358 21.213-8.787C86.642 75.785 90 68.284 90 60c0-16.569-13.431-30-30-30z" fill="white" fill-opacity="0.2"/>
+                                    <circle cx="60" cy="50" r="12" fill="white" fill-opacity="0.3"/>
+                                    <path d="M45 75c0-8.284 6.716-15 15-15s15 6.716 15 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <defs>
+                                        <linearGradient id="memberGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Emily Rodriguez</h3>
+                            <p class="member-role">Head of Product</p>
+                            <p class="member-bio">UX designer and product strategist with a background in public policy. Ensures our platform is intuitive, accessible, and meets the real needs of citizens and municipal staff.</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="impact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Impact</h2>
+                    <p>Making a measurable difference in communities across the country</p>
+                </div>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <div class="impact-number">10,247</div>
+                        <div class="impact-label">Issues Resolved</div>
+                        <div class="impact-description">Civic issues successfully addressed and resolved through our platform</div>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="impact-number">52,831</div>
+                        <div class="impact-label">Active Citizens</div>
+                        <div class="impact-description">Community members actively engaged in civic reporting and tracking</div>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="impact-number">94.7%</div>
+                        <div class="impact-label">Satisfaction Rate</div>
+                        <div class="impact-description">Citizen satisfaction with issue resolution and platform experience</div>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <div class="impact-number">$2.3M</div>
+                        <div class="impact-label">Cost Savings</div>
+                        <div class="impact-description">Estimated savings for municipalities through improved efficiency</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Core Values</h2>
+                    <p>The principles that guide everything we do</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                <path d="M13 12h3a2 2 0 0 1 2 2v1"/>
+                                <path d="M11 12H8a2 2 0 0 0-2 2v1"/>
+                            </svg>
+                        </div>
+                        <h3>Transparency</h3>
+                        <p>We believe in open communication and clear visibility into the civic issue resolution process. Every citizen deserves to know the status of their concerns.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <h3>Efficiency</h3>
+                        <p>We streamline the civic reporting process, reducing bureaucratic barriers and ensuring faster response times for community issues.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Community</h3>
+                        <p>We foster stronger connections between citizens and their local government, building more engaged and resilient communities.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We continuously improve our platform using the latest technology and user feedback to better serve our communities.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <h3>Accountability</h3>
+                        <p>We hold ourselves and our municipal partners to the highest standards, ensuring every reported issue receives proper attention and resolution.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Accessibility</h3>
+                        <p>We ensure our platform is accessible to all citizens, regardless of their technical expertise or physical abilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join Our Mission</h2>
+                    <p>Be part of the civic engagement revolution. Report issues, track progress, and help build better communities.</p>
+                    <div class="cta-buttons">
+                        <a href="report-issue.html" class="btn btn-primary btn-large">Report an Issue</a>
+                        <a href="view-issues.html" class="btn btn-outline btn-large">View Issues</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Civic Green Resolve</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering citizens to report and track civic issues in their community for a better tomorrow.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="report-issue.html">Report Issue</a></li>
+                        <li><a href="view-issues.html">View Issues</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p>📧 support@civicgreen.com</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 123 Government Plaza, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Civic Green Resolve. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="about-script.js"></script>
+</body>
+</html>
+
